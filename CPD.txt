@@ -9,6 +9,10 @@ I learnt how to download files from GitHub to Visual Studio and then edit the fi
 ***** HELP NEEDED HERE *****
 Just added a new file to repo in Github named Julia thought
 I'd try and download to Visual Studio but can't work it out??? 
+
+Updated my CPD file again wouldnt push as said had files sat on local not
+in remote and I had to fetch them, just kept clicking and eventually
+brought Julia file to VS. Need to understand this? How do I delete it now?
 ********************************************************
 
 So far I have learnt the following workflow:
