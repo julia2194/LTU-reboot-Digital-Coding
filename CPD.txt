@@ -1,1 +1,7 @@
 
+1.3 30 9 20
+
+Relection
+
+In today's lesson I learnt things aren't always straightforward but teamwork can get you through. 
+I learnt how to download files from GitHub to Visual Studio and then edit the file. Also how to find other useful extensions I can use such as live server which I downloaded.
