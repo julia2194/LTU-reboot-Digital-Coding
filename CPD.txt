@@ -13,6 +13,10 @@ I'd try and download to Visual Studio but can't work it out???
 Updated my CPD file again wouldnt push as said had files sat on local not
 in remote and I had to fetch them, just kept clicking and eventually
 brought Julia file to VS. Need to understand this? How do I delete it now?
+tried it again and created another new file. Pulled it through to VS by clicking 
+pull in repository on GHD. Right clicked to delete file in VS!  
+
+I worked it out yeah..........
 ********************************************************
 
 So far I have learnt the following workflow:
