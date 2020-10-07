@@ -1,0 +1,9 @@
+.font-red{ /* selecting a class*/
+    color: red;
+}
+
+#important heading { /*selecting an id*/
+
+
+    font-size: 50px;
+}
