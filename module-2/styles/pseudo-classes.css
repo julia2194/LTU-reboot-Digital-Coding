@@ -1,0 +1,20 @@
+a:link {
+columns: #ff0000;
+/* unvisited link */
+
+}
+
+a:visited {
+
+    color: #00FF00
+} /* visited link */
+
+a:hover, a:focus {
+color:#FF00FF;
+/* mouse over or select keyboard */
+
+}
+
+a:active{
+    color: #0000FF;
+}
