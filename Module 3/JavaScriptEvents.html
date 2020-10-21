@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Events</title>
+</head>
+<body>
+    
+<button>click Me!</button>
+    <script>
+
+var button = document.querySelector('button');
+
+button.addEventListener('click', function(event) {
+
+    button.textContent = 'I have been clicked';
+
+    console.log( event );
+});
+
+
+
+    </script>
+</body>
+</html>
