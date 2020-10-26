@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3.7.1 Animal Filter using JS</title>
+
+<style>
+div.main {
+    padding:0px;
+    max-width: 1000px;
+    margin: 10px auto;
+    }
+
+div.selection-container{
+padding: 1em;                   /* 10px (default size) * 1 */
+margin: 1em;
+
+}
+
+.btn{
+ border: 1px solid purple;
+ }
+.btn:hover{
+background-color: yellow;
+color: #fff;
+}
+
+.active {
+background: turquoise;
+color: #fff;
+}
+
+.image-selections {
+    display: flex;  /* puts things in row */
+    flex-wrap: wrap;
+}
+
+.images{
+    margin: 1em;
+    }
+.main img{
+width: 200px;
+border: 5px solid orangered;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="main text-center">
+
+<div class="container">
+
+<h1> Animal Filter Using JS </h1>
+
+<div class="search-container">
+    <label for="filter">Search Animal</label>
+<input type="text" name="filter">
+<button class="filter-button btn btn-primary">Filter</button>
+    </div>
+<div class="selection-container">
+
+<button class="btn selection active" data-class="all">ALL</button>
+<button class="btn selection" data-class="tigers">Tigers</button>
+<button class="btn selection" data-class="lions">Lions</button>
+<button class="btn selection" data-class="penguins">Penguins</button>
+<button class="btn selection" data-class="elephants">Elephants</button>
+
+
+</div> <!-- End of Selection Container -->
+</div> <!-- end of main container -->
+
+<div class="image-selections">
+    <div class="images" data-class="elephants">
+        <img src="https://images.pexels.com/photos/1054666/pexels-photo-1054666.jpeg?cs=srgb&dl=pexels-harvey-sapir-1054666.jpg&fm=jpg" alt="">
+    </div>
+
+    <div class="images" data-class="tigers">
+        <img src="https://images.pexels.com/photos/3985635/pexels-photo-3985635.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </div>
+
+
+<div class="images" data-class="penguins">
+    <img src="https://images.pexels.com/photos/60088/pexels-photo-60088.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+</div>
+
+<div class="images" data-class="lions">
+    <img src="https://images.pexels.com/photos/730534/pexels-photo-730534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+</div>
+
+</div> <!-- End of image-selection-->
+
+
+</div>   <!-- end of main container -->
+
+
+
+<script>
+
+const selectionButtons = document.querySelectorAll('button.selection');
+const allImages = document.querySelectorAll(' .main .image-selections, .images');
+
+// Toggle Images - action is Show / Hide
+
+function toggleImages( dataClass ) {
+if( dataClass === 'all') {
+    allImages.forEach( function( image ) {
+        image.style.display = 'block';
+    });
+
+} else {
+
+    allImages.forEach( function( image ) {
+      image.dataset.class ===  dataClass ? image.style.display = 'block': image.style.display = 'none'; // if( ) {}
+
+/* if(image.dataset.class ===  dataClass ){
+    image.style.display = 'block';
+} else {
+
+    image.style.display = 'none';
+}*/
+
+    });
+ }
+
+}
+
+selectionButtons.forEach( function( item ) {
+    item.addEventListener('click', function()   {
+
+        toggleImages( item.dataset.class );
+});
+
+});
+
+    </script>
+</body>
+</html>
