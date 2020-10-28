@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4.2.2</title>
+</head>
+<body>
+    
+    <script>
+/*
+1. Reading list
+
+keep track of what books I have read & ones I have not read
+Create an ARRAY of OBJECTS
+
+BOOK TITLE = 'string'
+AUTHOR = 'string'
+hasRead = boolean - true
+
+    [
+        {TITLE = 'The Hobbit', 
+        AUTHOR = 'J R R Tolken',
+        hasRead = true
+        },
+
+         {TITLE = 'Harry Potter', 
+         AUTHOR = 'J K Rowling',
+         hasRead = false
+         }
+    ]
+
+
+let books = [
+
+        {
+        
+        TITLE = 'The Hobbit', 
+        AUTHOR = 'J R R Tolken',
+        hasRead = true
+        },
+
+        {
+         TITLE = 'Harry Potter', 
+         AUTHOR = 'J K Rowling',
+         hasRead = false
+         }
+         ]
+
+show book title & author of each book
+
+FOR LOOP
+set counter = 0;
+as long as counter is LESS THAN the ARRAY LENGTH
+INCREMENT counter by 1
+
+print BOOK TITLE / AUTHOR
+
+
+         FOR ( counter = 0  counter < array.length counter++){
+            print BOOK TITLE / AUTHOR
+         }
+
+       for( let counter = 0; counter < array.length; counter++ ){
+             console.log( BOOK TITLE / AUTHOR );
+       }
+
+
+
+Depending on whether or not I have read book, show the
+folowing message:
+
+You have already read BOOK TITLE by AUTHOR
+
+You have not read BOOK TITLE by AUTHOR
+
+
+(let books are 2 objects)
+
+*/
+let books = [                         
+        {
+        title : 'The Hobbit', 
+        author : 'J R R Tolken',
+        hasRead : true
+        },
+
+        {
+         title : 'Harry Potter', 
+         author : 'J K Rowling',
+         hasRead : false
+         }
+         ]
+
+         for( let counter = 0; counter < books.length; counter++ ){
+             // console.log( books[counter].title , books[counter].author);
+       
+       
+            if( books[counter].hasRead  ){
+
+                console.log( 'You have read  '  + books[counter].title , books[counter].author);
+// concatination where add info 
+            } else {
+                 console.log( ' You have not read  ' + books[counter].title , books[counter].author);
+                
+
+
+            }
+       
+       }
+
+    </script>
+
+
+
+</body>
+</html>
